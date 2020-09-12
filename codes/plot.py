@@ -14,12 +14,12 @@ G=np.column_stack((A,B[:,newaxis]))
 
 # Checking the consistency of the system of equations
 Rank_A=np.linalg.matrix_rank(A)
-#print(Rank_A)
+
 Rank_G=np.linalg.matrix_rank(G)
-#print(Rank_G)
+
 #Dimension of matrix A n rows and m columns
 (n,m)=np.shape(A)
-#print(n,m)
+
 
 if Rank_A==Rank_G:
 	if Rank_A == n:
@@ -55,7 +55,7 @@ plt.plot(x_CD[0,:],x_CD[1,:],label="3x+2y=5")
 
 #plotting point
 ax.scatter(X[0],X[1],marker='o')
-ax.text(3,1,0, "X(-1,4,0)", color='red')
+ax.text(-1,4,0, "X(-1,4,0)", color='red')
 
 #show plot
 plt.xlabel('$x$');plt.ylabel('$y$')
