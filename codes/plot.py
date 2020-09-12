@@ -55,7 +55,7 @@ plt.plot(x_CD[0,:],x_CD[1,:],label="3x+2y=5")
 
 #plotting point
 ax.scatter(X[0],X[1],marker='o')
-ax.text(-1,4,0, "X(-1,4,0)", color='red')
+ax.text(-1,4,0, "X(-1,4,0)", color='black')
 
 #show plot
 plt.xlabel('$x$');plt.ylabel('$y$')
